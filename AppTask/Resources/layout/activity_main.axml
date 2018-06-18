@@ -4,4 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+<!--android:background="@android:color/background_light"-->
+    <TextView
+        android:id="@+id/TextViewSummary"
+        android:text="@string/SummaryTitle"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/TextViewTaskToDoCount"
+        android:text="@string/TaskToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TextViewSummary" />
+    <TextView
+        android:id="@+id/TextViewTaskDoingCount"
+        android:text="@string/TaskDoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:layout_alignStart="@id/TextViewTaskToDoCount"
+        android:layout_below="@id/TextViewTaskToDoCount" />
+    <TextView
+        android:id="@+id/TextViewTaskDoneCount"
+        android:text="@string/TaskToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:layout_alignStart="@id/TextViewTaskDoingCount"
+        android:layout_below="@id/TextViewTaskDoingCount" />
+    <Button
+        android:id="@+id/ButtonNewTask"
+        android:text="@string/New"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="24dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true" />
+    <Button
+        android:id="@+id/ButtonShowAll"
+        android:text="@string/ShowAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:textAllCaps="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
